@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(185, 41%, 84%);
+  min-height: 1000px;
+  font-family: 'Space Mono', monospace;
+  font: "monospace";
+}
+
+img {
+  /* margin-top: margin-right: margin-bottom: margin-left: */
+  /* 3 values: top, left/right, bottom  */
+  /* margin: top, right, bottom, left */
+  /* 2 values:  top/bottom left/right */
+  margin: 100px 0 50px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: top, right, bottom, left
+  padding: 10px; */
+}
+
+body {
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.bill {
+  background-color: hsl(189, 41%, 97%);
+}
+
+.billLabel {
+  margin-top: 5px;
+  float: left;
+}
+
+.billError {
+  float: right;
+  margin: 5px 30px 0 0;
+  color: red;
+}
+
+input {
+  margin: 5px 0 20px 0;
+  width: 85%;
+  height: 30px;
+  font-size: 24px;
+  text-align: right;
+}
+
+input.bill {
+  margin-bottom: 30px;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 1px solid hsl(172, 67%, 45%);
+  border: 1px solid hsl(172, 67%, 45%);
+}
+
+.percent {
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  font: "monospace";
+  font-size: 15px;
+  font-weight: 500;
+  width: 85px;
+  height: 35px;
+  margin: 3px 3px 8px 2px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+input.percent {
+  background-color: hsl(189, 41%, 97%);
+  color: black;
+  font-weight: 700;
+  margin: 1px 5px 30px 1px;
+  cursor: pointer;
+}
+
+.peopleError {
+  float:right;
+  margin-right:30px;
+  color:red;
+  visibility: hidden;
+}
+
+.calculator {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  width: 650px;
+  height: 320px;
+}
+
+.box {
+  text-align: left;
+  margin: 22px 12px;
+  width: 300px;
+  height: 280px;
+  float: left;
+}
+
+.box-right {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+  /* For desktop: */
+  img {
+    margin: 40px 0 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box-right {margin-top: 0px;}
+  .calculator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 320px;
+    height: 620px;
+  }
+}
+
+.inline {
+  display: inline-block;
+}
+
+.tipLabel {
+  margin: 30px 0 0 25px;
+  color: hsl(0, 0%, 100%);
+}
+
+.personLabels {
+  margin: 5px 0 0 25px;
+  color: hsl(184, 14%, 56%)l
+}
+
+.totalLabel {
+  margin: 30px 0 0 25px;
+  color: white;
+}
+
+.tipValues {
+  float: right;
+  margin: 20px 20px 0 0;
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+}
+
+button.reset {
+  margin: 80px 0 0 25px;
+  background-color: hsl(172, 67%, 45%);
+  width: 80%;
+  height: 35px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
